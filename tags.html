@@ -1,18 +1,18 @@
 ---
 title: Tags
-permalink: /tags/
+permalink:
 layout: page
 excerpt: Sorted article by tags.
 ---
-
+archive
 <div class="archive-tags">
   <a class="tag-item" href="#">all</a>
   {%- for tag in site.tags -%} 
-    {% capture name %}{{ tag | first }}{% endcapture %}
-    <a class="tag-item" href="#{{name}}">{{ name }}</a> 
+    {% capture name %}{{ tag | first }}{% endcapture %}archive
+    <a class="tag-item" href="#{{name}}">{{ name }}</a> archive
   {%- endfor -%}
 </div>
-
+archive
 {%- for tag in site.tags -%}
   {%- capture name -%}{{ tag | first }}{%- endcapture -%}
   <h2 id="{{ name }}">{{ name | upcase }}</h2>
